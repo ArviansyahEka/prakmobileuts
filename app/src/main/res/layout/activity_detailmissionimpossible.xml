@@ -5,14 +5,12 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".Detailmissionimpossible"
-    android:background="@color/lightblue"
-    android:padding="15dp">
+    tools:context=".Detailmissionimpossible">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="70dp"
-        android:background="@drawable/container">
+        android:background="@color/lightblue">
         <ImageView
             android:id="@+id/backbutton"
             android:layout_width="wrap_content"
@@ -26,8 +24,9 @@
             android:fontFamily="@font/inter_semibold"
             android:gravity="center"
             android:text="Detail Film"
-            android:textAlignment="center"
+            android:textAlignment="textStart"
             android:textAppearance="@font/roboto"
+            android:textColor="@color/kuning"
             android:paddingRight="20dp"
             android:textSize="25dp"></TextView>
     </LinearLayout>
@@ -37,6 +36,8 @@
         android:layout_height="match_parent"
         android:orientation="vertical"
         android:background="@drawable/container"
+        android:elevation="10dp"
+        android:layout_margin="10dp"
         android:paddingLeft="10dp"
         android:paddingRight="10dp">
         <LinearLayout

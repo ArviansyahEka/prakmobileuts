@@ -33,6 +33,7 @@ class Checkoutavenger : AppCompatActivity() {
         val jenisseat = resources.getStringArray(R.array.jenisseat)
         val jenispembayaran = resources.getStringArray(R.array.jenispembayaran)
         val bank = resources.getStringArray(R.array.bank)
+        val gambar = intent.getIntExtra(Detailsavenger.gambarkur, 0)
 
         with(binding) {
             val ambiljudul = intent.getStringExtra(Detailsavenger.judulkur)
@@ -88,6 +89,7 @@ class Checkoutavenger : AppCompatActivity() {
                     if (selectedPrice != null) {
                         jenistempat.text = selectedJenisseat
                         hargaseat.text = "Rp" + selectedPrice.toString()
+
                         val fee = 4000
                         val ppn = (selectedPrice * 10 / 100)
                         hargapenanganan.text = "Rp"+fee.toString()
@@ -95,7 +97,7 @@ class Checkoutavenger : AppCompatActivity() {
                         val sum = fee + selectedPrice + ppn
                         hargatotal.text = "Rp"+sum.toString()
                     }
-                    Log.d("SelectedJenisseat", selectedJenisseat)
+                    Log.d("SelectedPrice", selectedPrice.toString())
                 }
 
                 override fun onNothingSelected(parent: AdapterView<*>) {
@@ -177,6 +179,7 @@ class Checkoutavenger : AppCompatActivity() {
                 intent.putExtra("TANGGAL_EXTRA", date)
                 intent.putExtra("HARGA_EXTRA", selectedHarga)
                 intent.putExtra("FEE_EXTRA", sumfee)
+                intent.putExtra("GAMBAR_EXTRA", gambar)
 
                 startActivity(intent)
 

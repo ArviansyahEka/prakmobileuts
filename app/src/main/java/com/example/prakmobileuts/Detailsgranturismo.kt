@@ -12,6 +12,7 @@ class Detailsgranturismo : AppCompatActivity() {
     companion object {
         const val judulkur = "judulkur"
         const val genrekur = "genrekur"
+        const val gambarkur = "gambarkur"
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -28,9 +29,11 @@ class Detailsgranturismo : AppCompatActivity() {
             beli.setOnClickListener {
                 val juduldetail = judul.text.toString()
                 val genredetail = genre.text.toString()
+
                 val intent = Intent(this@Detailsgranturismo, Checkoutavenger::class.java)
                 intent.putExtra(judulkur, juduldetail)
                 intent.putExtra(genrekur, genredetail)
+                intent.putExtra(gambarkur, R.drawable.granturismo)
                 startActivity(intent)
             }
         }

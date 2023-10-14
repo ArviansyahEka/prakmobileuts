@@ -16,6 +16,7 @@ class Dashboard : AppCompatActivity() {
         with(binding) {
             val uname = intent.getStringExtra(MainActivity.uname)
             getusername.text = uname
+
             endgame.setOnClickListener {
                 val intent = Intent(this@Dashboard, Detailsavenger::class.java)
                 startActivity(intent)

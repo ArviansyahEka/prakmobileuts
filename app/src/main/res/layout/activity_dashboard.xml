@@ -19,7 +19,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="20dp"
-            android:layout_marginTop="30dp"
+            android:layout_marginTop="20dp"
             android:layout_marginBottom="5dp"
             android:fontFamily="@font/inter_semibold"
             android:text="Welcome back!"
@@ -41,7 +41,7 @@
             android:layout_height="wrap_content"
             android:fontFamily="@font/inter_semibold"
             android:paddingLeft="20dp"
-            android:paddingTop="50dp"
+            android:paddingTop="30dp"
             android:textColor="@color/lightblue"
             android:text="Film Minggu Ini"
             android:textSize="25dp"></TextView>

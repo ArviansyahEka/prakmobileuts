@@ -12,6 +12,7 @@ class Detailsavenger : AppCompatActivity() {
     companion object {
         const val judulkur = "judulkur"
         const val genrekur = "genrekur"
+        const val gambarkur = "gambarkur"
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -31,6 +32,7 @@ class Detailsavenger : AppCompatActivity() {
                 val intent = Intent(this@Detailsavenger, Checkoutavenger::class.java)
                 intent.putExtra(judulkur, juduldetail)
                 intent.putExtra(genrekur, genredetail)
+                intent.putExtra(gambarkur, R.drawable.endgame)
                 startActivity(intent)
             }
         }

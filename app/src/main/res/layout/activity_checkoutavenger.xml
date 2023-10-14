@@ -4,21 +4,17 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".Checkoutavenger"
-    android:background="@color/lightblue"
-    android:padding="15dp"
-    >
+    tools:context=".Checkoutavenger">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="70dp"
-        android:background="@drawable/container">
+        android:background="@color/lightblue">
         <ImageView
             android:id="@+id/backbutton"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:src="@drawable/backbutton"
-
             android:paddingLeft="15dp"></ImageView>
 
         <TextView
@@ -28,17 +24,20 @@
             android:fontFamily="@font/inter_semibold"
             android:gravity="center"
             android:text=" "
-            android:textAlignment="center"
-            android:paddingRight="20dp"
-            android:textSize="25dp"></TextView>
+            android:textAlignment="textStart"
+            android:textAppearance="@font/roboto"
+            android:paddingLeft="20dp"
+            android:textSize="25dp"
+            android:textColor="@color/kuning"></TextView>
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        android:paddingTop="20dp"
+        android:layout_margin="10dp"
         android:background="@drawable/container"
+        android:elevation="10dp"
         android:textAppearance="@font/roboto">
 
         <TextView
@@ -47,6 +46,7 @@
             android:fontFamily="@font/roboto_bold"
             android:textColor="@color/lightblue"
             android:paddingLeft="20dp"
+            android:paddingTop="20dp"
             android:text="Pilih Tanggal"></TextView>
 
         <LinearLayout
@@ -58,7 +58,7 @@
                 android:calendarViewShown="false"
                 android:datePickerMode="spinner"
                 android:layout_width="match_parent"
-                android:layout_height="100dp"
+                android:layout_height="110dp"
                 android:layout_gravity="center"></DatePicker>
         </LinearLayout>
 
@@ -80,6 +80,8 @@
                 android:textAllCaps="false"></TextView>
             <Spinner
                 android:id="@+id/spinnerbioskop"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
                 android:layout_width="match_parent"
                 android:layout_height="45dp"
                 android:entries="@array/bioskop"
@@ -98,7 +100,8 @@
                 android:id="@+id/spinnerseat"
                 android:layout_width="match_parent"
                 android:layout_height="45dp"
-
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
                 android:entries="@array/jenisseat"
                 android:layout_marginTop="10dp"
                 android:background="@drawable/buttonspinner"></Spinner>
@@ -106,7 +109,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:paddingTop="10dp"
+                android:paddingTop="30dp"
                 android:textSize="20dp"
                 android:textColor="@color/lightblue"
                 android:fontFamily="@font/roboto_bold"
@@ -116,6 +119,7 @@
                 android:paddingTop="10dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:textColor="@color/lightblue"
                 android:text="Jenis Seat:"></TextView>
             <LinearLayout
                 android:layout_width="match_parent"
@@ -127,7 +131,6 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="start"
                     android:textSize="15dp"
-                    android:textColor="@color/lightblue"
                     android:layout_marginEnd="80dp"
                     android:text="Regular"></TextView>
                 <TextView
@@ -138,7 +141,7 @@
                     android:layout_height="wrap_content"
                     android:paddingLeft="100dp"
                     android:textAlignment="textEnd"
-                    android:fontFamily="@font/roboto_bold"
+                    android:fontFamily="@font/roboto"
                     android:text="Rp0"></TextView>
             </LinearLayout>
 
@@ -146,7 +149,8 @@
                 android:layout_width="match_parent"
                 android:paddingTop="5dp"
                 android:layout_height="wrap_content"
-                android:text="Biaya Penanganan:"></TextView>
+                android:textColor="@color/lightblue"
+                android:text="Biaya Tambahan:"></TextView>
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -158,17 +162,16 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="start"
                     android:textSize="15dp"
-                    android:textColor="@color/lightblue"
                     android:layout_marginEnd="80dp"
                     android:text="Biaya Penanganan"></TextView>
                 <TextView
                     android:id="@+id/hargapenanganan"
                     android:textSize="15dp"
-                    android:textColor="@color/lightblue"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:textAlignment="textEnd"
-                    android:fontFamily="@font/roboto_bold"
+                    android:textColor="@color/lightblue"
+                    android:fontFamily="@font/roboto"
                     android:text="Rp4000"></TextView>
             </LinearLayout>
             <LinearLayout
@@ -181,17 +184,16 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="start"
                 android:textSize="15dp"
-                android:textColor="@color/lightblue"
                 android:layout_marginEnd="80dp"
                 android:text="PPN"></TextView>
             <TextView
                 android:id="@+id/hargappn"
                 android:textSize="15dp"
-                android:textColor="@color/lightblue"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textAlignment="textEnd"
-                android:fontFamily="@font/roboto_bold"
+                android:fontFamily="@font/roboto"
+                android:textColor="@color/lightblue"
                 android:text="Rp4000"></TextView>
         </LinearLayout>
             <LinearLayout
@@ -228,7 +230,7 @@
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/roboto_bold"
                 android:textColor="@color/lightblue"
-                android:paddingTop="10dp"
+                android:paddingTop="20dp"
                 android:paddingLeft="20dp"
                 android:layout_marginTop="10dp"
                 android:text="Pilih Jenis Pembayaran"></TextView>
@@ -237,29 +239,30 @@
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
                 android:entries="@array/jenispembayaran"
-                android:layout_marginLeft="20dp"
-                android:layout_marginRight="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
                 android:layout_marginTop="5dp"
                 android:background="@drawable/buttonspinner"></Spinner>
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:paddingTop="10dp"
                 android:paddingLeft="10dp"
-                android:paddingRight="10dp">
+                android:paddingRight="10dp"
+                android:orientation="horizontal">
                 <Spinner
                     android:id="@+id/spinnerbank"
-                    android:layout_width="match_parent"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:entries="@array/bank"
-                    android:background="@drawable/buttonspinner"
-                    android:layout_weight="5"></Spinner>
+                    android:layout_marginEnd="10dp"
+                    android:background="@drawable/buttonspinner"></Spinner>
                 <EditText
                     android:id="@+id/nomorkartu"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="Card Number"
-                    android:layout_weight="5"
                     android:paddingLeft="10dp"
                     android:background="@drawable/buttonspinner"></EditText>
             </LinearLayout>

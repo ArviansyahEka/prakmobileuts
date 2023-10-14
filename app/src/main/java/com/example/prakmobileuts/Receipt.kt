@@ -35,6 +35,9 @@ class Receipt : AppCompatActivity() {
             val receivedJenispembayaran = intent.getStringExtra("JENISPEMBAYARAN_EXTRA")
             ambilpembayaran.text = receivedJenispembayaran
 
+            val receivedBank = intent.getStringExtra("BANK_EXTRA")
+            ambilbank.text = receivedBank
+
             val recievedTanggal = intent.getStringExtra("TANGGAL_EXTRA")
             ambilwaktu.text = recievedTanggal
 
@@ -50,6 +53,9 @@ class Receipt : AppCompatActivity() {
 
             val total = harga+recieveSumfee
             ambiltotal.text="Rp"+total.toString()
+
+            val receivedGambar = intent.getIntExtra("GAMBAR_EXTRA", 0)
+            ambilgambar.setImageResource(receivedGambar)
 
         }
     }

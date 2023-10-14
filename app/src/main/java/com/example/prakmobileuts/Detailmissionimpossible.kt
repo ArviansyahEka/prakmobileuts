@@ -12,6 +12,7 @@ class Detailmissionimpossible : AppCompatActivity() {
     companion object {
         const val judulkur = "judulkur"
         const val genrekur = "genrekur"
+        const val gambarkur = "gambarkur"
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -31,6 +32,7 @@ class Detailmissionimpossible : AppCompatActivity() {
                 val intent = Intent(this@Detailmissionimpossible, Checkoutavenger::class.java)
                 intent.putExtra(judulkur, juduldetail)
                 intent.putExtra(genrekur, genredetail)
+                intent.putExtra(gambarkur, R.drawable.missionimpossible)
                 startActivity(intent)
             }
         }
