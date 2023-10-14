@@ -5,31 +5,47 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".Detailsavenger">
+    tools:context=".Detailsavenger"
+    android:background="@color/lightblue"
+    android:padding="15dp">
 
-<LinearLayout
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@drawable/container">
+        <ImageView
+            android:id="@+id/backbutton"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/backbutton"
+            android:paddingLeft="15dp"></ImageView>
 
-<ImageView
-    android:id="@+id/back"
-    android:layout_width="40dp"
-    android:layout_height="match_parent"
-    android:src="@drawable/back"></ImageView>
-    <TextView
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/inter_semibold"
+            android:gravity="center"
+            android:text="Detail Film"
+            android:textAlignment="center"
+            android:paddingRight="20dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textSize="25dp"></TextView>
+    </LinearLayout>
+
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="Movie Details"
-        android:textAlignment="center"
-        android:textSize="25dp"
-        android:paddingTop="15dp"></TextView>
-</LinearLayout>
+        android:orientation="vertical"
+        android:background="@drawable/container"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
     <ImageView
+        android:id="@+id/endgame"
         android:paddingTop="20dp"
         android:layout_width="200dp"
         android:layout_height="wrap_content"
@@ -44,8 +60,10 @@
         android:orientation="vertical">
 
         <TextView
+            android:id="@+id/judul"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto"
             android:paddingTop="10dp"
             android:text="Avengers: Endgame"
             android:textAlignment="center"
@@ -54,38 +72,48 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto"
             android:text="2019"
             android:textAlignment="center"></TextView>
 
         <TextView
+            android:id="@+id/genre"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto"
             android:text="Action, Adventure, Fantasy"
             android:textAlignment="center"></TextView>
 
         <ScrollView
             android:layout_width="match_parent"
-            android:layout_height="350dp">
+            android:layout_height="200dp">
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto"
                 android:paddingLeft="15dp"
                 android:paddingTop="10dp"
-                android:text="@string/avengers"
+                android:text="After the devastating events of Avengers: Infinity War (2018), the universe is in ruins due to the efforts of the Mad Titan, Thanos. With the help of remaining allies, the Avengers must assemble once more in order to undo Thanos's actions and undo the chaos to the universe, no matter what consequences may be in store, and no matter who they face..."
                 android:textAlignment="textStart"></TextView>
         </ScrollView>
 <LinearLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingBottom="20dp">
-        <androidx.appcompat.widget.AppCompatButton
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:layout_gravity="bottom"
-            android:background="@drawable/logintoken"
-            android:text="Buy Ticket"
-            android:textColor="@color/lightblue"></androidx.appcompat.widget.AppCompatButton>
+    android:paddingBottom="20dp"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp">
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/beli"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="bottom"
+        android:background="@drawable/button"
+        android:fontFamily="@font/roboto_bold"
+        android:text="Beli Tiket"
+        android:textColor="@color/kuning"></androidx.appcompat.widget.AppCompatButton>
 </LinearLayout>
     </LinearLayout>
     </LinearLayout>
+</LinearLayout>

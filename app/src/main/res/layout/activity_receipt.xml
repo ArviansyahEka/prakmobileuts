@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Detailsavenger"
+    android:background="@color/lightblue"
+    android:padding="15dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp">
+        <ImageView
+            android:id="@+id/backbutton"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/backbutton"
+            android:paddingLeft="15dp"></ImageView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/poppins_medium"
+            android:gravity="center"
+            android:text="Ringkasan Order"
+            android:textAlignment="textStart"
+            android:textAppearance="@font/roboto"
+            android:textColor="@color/kuning"
+            android:paddingRight="20dp"
+            android:textSize="25dp"></TextView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/container"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="20dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/inter_semibold"
+                android:paddingBottom="5dp"
+                android:text="Pesanan Anda"
+                android:textColor="@color/lightblue"
+                android:textSize="25dp"
+                android:textStyle="bold"></TextView>
+
+            <TextView
+                android:id="@+id/ambiljudul"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/inter"
+                android:text="JUDUL"
+                android:textColor="@color/kuning"
+                android:textSize="30dp"
+                android:textStyle="bold"></TextView>
+
+            <TextView
+                android:id="@+id/ambilgenre"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto"
+                android:text="GENRE"
+                android:textSize="18dp"></TextView>
+
+            <TextView
+                android:id="@+id/ambilbioskop"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto"
+                android:paddingTop="10dp"
+                android:text="STUDIO"
+                android:textSize="15dp"></TextView>
+
+            <TextView
+                android:id="@+id/ambilwaktu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto"
+                android:paddingTop="10dp"
+                android:text="WAKTU"
+                android:textSize="15dp"></TextView>
+    </LinearLayout>
+    </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto"
+            android:paddingTop="30dp"
+            android:text="Pesanan Nomor"></TextView>
+
+        <TextView
+            android:id="@+id/ambilnomor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/inter_semibold"
+            android:text="3796534578436523"
+            android:textSize="20dp"
+            android:textStyle="bold"></TextView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/inter"
+            android:paddingTop="20dp"
+            android:text="Tipe Tempat Duduk"></TextView>
+
+        <TextView
+            android:id="@+id/ambilduduk"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/inter_semibold"
+            android:text="Duduk"
+            android:textSize="20dp"
+            android:textStyle="bold"></TextView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/inter"
+            android:paddingTop="20dp"
+            android:text="Jenis Pembayaran"></TextView>
+
+        <TextView
+            android:id="@+id/ambilpembayaran"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/inter_semibold"
+            android:text="Pembayaran"
+            android:textSize="20dp"
+            android:textStyle="bold"></TextView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/inter"
+            android:paddingTop="20dp"
+            android:text="Harga Tiket"></TextView>
+
+        <TextView
+            android:id="@+id/ambilharga"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/inter_semibold"
+            android:text="Rp0"
+            android:textSize="20dp"
+            android:textStyle="bold"></TextView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/inter"
+            android:paddingTop="20dp"
+            android:text="Conveience Fee"></TextView>
+
+        <TextView
+            android:id="@+id/ambilsumfee"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/inter_semibold"
+            android:text="Rp0"
+            android:textSize="20dp"
+            android:textStyle="bold"></TextView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/inter"
+            android:paddingTop="60dp"
+            android:text="Total Pembayaran"></TextView>
+
+        <TextView
+            android:id="@+id/ambiltotal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/inter_semibold"
+            android:text="Rp0"
+            android:textSize="40dp"
+            android:textStyle="bold"></TextView>
+</LinearLayout>
+</LinearLayout>

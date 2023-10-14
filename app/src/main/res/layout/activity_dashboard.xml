@@ -14,31 +14,37 @@
         android:orientation="vertical"
         android:background="@drawable/container"
         android:layout_margin="15dp">
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Welcome back!"
-        android:layout_marginTop="30dp"
-        android:layout_marginLeft="20dp"
-        android:layout_marginBottom="5dp"
-        android:textSize="15dp">
-    </TextView>
-    <TextView
-        android:id="@+id/getusername"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="20dp"
-        android:textSize="20dp">
-    </TextView>
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:paddingTop="50dp"
-        android:paddingLeft="20dp"
-        android:textSize="20dp"
-        android:text="Film Minggu Ini">
-    </TextView>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="5dp"
+            android:fontFamily="@font/inter_semibold"
+            android:text="Welcome back!"
+            android:textColor="@color/kuning"
+            android:textSize="15dp"></TextView>
+
+        <TextView
+            android:id="@+id/getusername"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:fontFamily="@font/inter_semibold"
+            android:textColor="@color/lightblue"
+            android:text="Standingmendoan"
+            android:textSize="20dp"></TextView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/inter_semibold"
+            android:paddingLeft="20dp"
+            android:paddingTop="50dp"
+            android:textColor="@color/lightblue"
+            android:text="Film Minggu Ini"
+            android:textSize="25dp"></TextView>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -62,24 +68,30 @@
             android:layout_height="wrap_content"
             android:orientation="vertical"
             android:paddingLeft="20dp">
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:fontFamily="@font/inter_semibold"
                 android:text="Avengers: Endgame"
-                android:textSize="20dp">
-            </TextView>
+                android:textColor="@color/lightblue"
+                android:textSize="20dp"></TextView>
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:textColor="@color/lightblue"
+                android:fontFamily="@font/inter"
                 android:text="Action, Adventure, Fantasy"
-                android:textSize="15dp">
-            </TextView>
+                android:textSize="15dp"></TextView>
+
             <TextView
+                android:textColor="@color/lightblue"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:fontFamily="@font/inter"
                 android:text="3 Jam 10 Menit"
-                android:textSize="15dp">
-            </TextView>
+                android:textSize="15dp"></TextView>
         </LinearLayout>
     </LinearLayout>
 
@@ -100,24 +112,30 @@
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
                 android:paddingLeft="20dp">
+
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:fontFamily="@font/inter_semibold"
                     android:text="Gran Turismo"
-                    android:textSize="20dp">
-                </TextView>
+                    android:textColor="@color/lightblue"
+                    android:textSize="20dp"></TextView>
+
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:fontFamily="@font/inter"
+                    android:textColor="@color/lightblue"
                     android:text="Action"
-                    android:textSize="15dp">
-                </TextView>
+                    android:textSize="15dp"></TextView>
+
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:fontFamily="@font/inter"
+                    android:textColor="@color/lightblue"
                     android:text="2 Jam 14 Menit"
-                    android:textSize="15dp">
-                </TextView>
+                    android:textSize="15dp"></TextView>
             </LinearLayout>
 
     </LinearLayout>
@@ -138,24 +156,30 @@
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
                 android:paddingLeft="20dp">
+
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:fontFamily="@font/inter_semibold"
+                    android:textColor="@color/lightblue"
                     android:text="Mission Impossible: Dead Reckoning"
-                    android:textSize="20dp">
-                </TextView>
+                    android:textSize="20dp"></TextView>
+
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:fontFamily="@font/inter"
+                    android:textColor="@color/lightblue"
                     android:text="Action, Adventure, Fantasy"
-                    android:textSize="15dp">
-                </TextView>
+                    android:textSize="15dp"></TextView>
+
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:fontFamily="@font/inter"
+                    android:textColor="@color/white"
                     android:text="1 Jam 50 Menit"
-                    android:textSize="15dp">
-                </TextView>
+                    android:textSize="15dp"></TextView>
             </LinearLayout>
         </LinearLayout>
         <LinearLayout
@@ -164,7 +188,8 @@
             android:layout_height="wrap_content"
             android:orientation="horizontal"
             android:paddingTop="20dp"
-            android:paddingLeft="20dp">
+            android:paddingLeft="20dp"
+            android:paddingBottom="20dp">
             <ImageView
                 android:layout_width="100dp"
                 android:layout_height="150dp"
@@ -175,24 +200,30 @@
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
                 android:paddingLeft="20dp">
+
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Spectre"
-                    android:textSize="20dp">
-                </TextView>
+                    android:textColor="@color/lightblue"
+                    android:fontFamily="@font/inter_semibold"
+                    android:text="James Bond: Spectre"
+                    android:textSize="20dp"></TextView>
+
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:textColor="@color/lightblue"
+                    android:fontFamily="@font/inter"
                     android:text="Action, Adventure"
-                    android:textSize="15dp">
-                </TextView>
+                    android:textSize="15dp"></TextView>
+
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:textColor="@color/lightblue"
+                    android:fontFamily="@font/inter"
                     android:text="1 Jam 50 Menit"
-                    android:textSize="15dp">
-                </TextView>
+                    android:textSize="15dp"></TextView>
             </LinearLayout>
         </LinearLayout>
 

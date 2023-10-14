@@ -20,6 +20,18 @@ class Dashboard : AppCompatActivity() {
                 val intent = Intent(this@Dashboard, Detailsavenger::class.java)
                 startActivity(intent)
             }
+            granturismo.setOnClickListener {
+                val intent = Intent(this@Dashboard, Detailsgranturismo::class.java)
+                startActivity(intent)
+            }
+            missionimpossible.setOnClickListener {
+                val intent = Intent(this@Dashboard, Detailmissionimpossible::class.java)
+                startActivity(intent)
+            }
+            spectre.setOnClickListener {
+                val intent = Intent(this@Dashboard, Detailspectre::class.java)
+                startActivity(intent)
+            }
         }
     }
 }

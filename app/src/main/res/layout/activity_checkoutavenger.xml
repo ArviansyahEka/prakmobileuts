@@ -1,0 +1,296 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Checkoutavenger"
+    android:background="@color/lightblue"
+    android:padding="15dp"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@drawable/container">
+        <ImageView
+            android:id="@+id/backbutton"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/backbutton"
+
+            android:paddingLeft="15dp"></ImageView>
+
+        <TextView
+            android:id="@+id/judul"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/inter_semibold"
+            android:gravity="center"
+            android:text=" "
+            android:textAlignment="center"
+            android:paddingRight="20dp"
+            android:textSize="25dp"></TextView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingTop="20dp"
+        android:background="@drawable/container"
+        android:textAppearance="@font/roboto">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_bold"
+            android:textColor="@color/lightblue"
+            android:paddingLeft="20dp"
+            android:text="Pilih Tanggal"></TextView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <DatePicker
+                android:id="@+id/tanggal"
+                android:calendarViewShown="false"
+                android:datePickerMode="spinner"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_gravity="center"></DatePicker>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_bold"
+                android:textColor="@color/lightblue"
+                android:text="Pilih Bioskop"
+                android:paddingLeft="20dp"
+                android:layout_marginTop="5dp"
+                android:textAllCaps="false"></TextView>
+            <Spinner
+                android:id="@+id/spinnerbioskop"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:entries="@array/bioskop"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/buttonspinner"></Spinner>
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_bold"
+                android:textColor="@color/lightblue"
+                android:paddingLeft="20dp"
+                android:text="Pilih Jenis Seat"></TextView>
+            <Spinner
+                android:id="@+id/spinnerseat"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+
+                android:entries="@array/jenisseat"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/buttonspinner"></Spinner>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:textSize="20dp"
+                android:textColor="@color/lightblue"
+                android:fontFamily="@font/roboto_bold"
+                android:text="Order Details">
+            </TextView>
+            <TextView
+                android:paddingTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Jenis Seat:"></TextView>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/jenistempat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:textSize="15dp"
+                    android:textColor="@color/lightblue"
+                    android:layout_marginEnd="80dp"
+                    android:text="Regular"></TextView>
+                <TextView
+                    android:id="@+id/hargaseat"
+                    android:textSize="15dp"
+                    android:textColor="@color/lightblue"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="100dp"
+                    android:textAlignment="textEnd"
+                    android:fontFamily="@font/roboto_bold"
+                    android:text="Rp0"></TextView>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:paddingTop="5dp"
+                android:layout_height="wrap_content"
+                android:text="Biaya Penanganan:"></TextView>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="5dp">
+                <TextView
+                    android:id="@+id/biaya"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:textSize="15dp"
+                    android:textColor="@color/lightblue"
+                    android:layout_marginEnd="80dp"
+                    android:text="Biaya Penanganan"></TextView>
+                <TextView
+                    android:id="@+id/hargapenanganan"
+                    android:textSize="15dp"
+                    android:textColor="@color/lightblue"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="textEnd"
+                    android:fontFamily="@font/roboto_bold"
+                    android:text="Rp4000"></TextView>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="2dp">
+            <TextView
+                android:id="@+id/biayappn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:textSize="15dp"
+                android:textColor="@color/lightblue"
+                android:layout_marginEnd="80dp"
+                android:text="PPN"></TextView>
+            <TextView
+                android:id="@+id/hargappn"
+                android:textSize="15dp"
+                android:textColor="@color/lightblue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="textEnd"
+                android:fontFamily="@font/roboto_bold"
+                android:text="Rp4000"></TextView>
+        </LinearLayout>
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/lightblue"></LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/texthargatotal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:textSize="15dp"
+                android:textColor="@color/lightblue"
+                android:layout_marginEnd="80dp"
+                android:text="Total Harga"></TextView>
+            <TextView
+                android:id="@+id/hargatotal"
+                android:textSize="20dp"
+                android:textColor="@color/lightblue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="textEnd"
+                android:fontFamily="@font/roboto_bold"
+                android:text="Rp4000"></TextView>
+        </LinearLayout>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_bold"
+                android:textColor="@color/lightblue"
+                android:paddingTop="10dp"
+                android:paddingLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:text="Pilih Jenis Pembayaran"></TextView>
+            <Spinner
+                android:id="@+id/spinnerpembayaran"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:entries="@array/jenispembayaran"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/buttonspinner"></Spinner>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+                <Spinner
+                    android:id="@+id/spinnerbank"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:entries="@array/bank"
+                    android:background="@drawable/buttonspinner"
+                    android:layout_weight="5"></Spinner>
+                <EditText
+                    android:id="@+id/nomorkartu"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Card Number"
+                    android:layout_weight="5"
+                    android:paddingLeft="10dp"
+                    android:background="@drawable/buttonspinner"></EditText>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/genre"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" "
+                android:textColor="@color/white"></TextView>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/bayar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:background="@drawable/button"
+                android:fontFamily="@font/roboto_bold"
+                android:text="Bayar"
+                android:textColor="@color/kuning"></androidx.appcompat.widget.AppCompatButton>
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -13,6 +13,24 @@
         android:theme="@style/Theme.Prakmobileuts"
         tools:targetApi="31">
         <activity
+            android:name=".Checkout"
+            android:exported="false" />
+        <activity
+            android:name=".Detailspectre"
+            android:exported="false" />
+        <activity
+            android:name=".Detailmissionimpossible"
+            android:exported="false" />
+        <activity
+            android:name=".Detailsgranturismo"
+            android:exported="false" />
+        <activity
+            android:name=".Receipt"
+            android:exported="false" />
+        <activity
+            android:name=".Checkoutavenger"
+            android:exported="false" />
+        <activity
             android:name=".Detailsavenger"
             android:exported="false" />
         <activity
@@ -30,6 +48,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
     </application>
 
 </manifest>

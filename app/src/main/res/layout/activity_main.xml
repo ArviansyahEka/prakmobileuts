@@ -144,7 +144,7 @@
     android:background="@drawable/customborder"
     android:elevation="10dp"
     android:padding="10dp"
-    android:text="Masuk"
+    android:text="daftar"
     android:textColor="@color/lightblue"/>
 
     <LinearLayout
